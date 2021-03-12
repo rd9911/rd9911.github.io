@@ -1,7 +1,30 @@
 <!DOCTYPE html>
 <style>
+  main {
+    display: grid;
+  	background-color: white;
+    justify-content: center;
+    align-items: center;
+    }
+   .search-btns {
+
+   }
   .search {
-    margin: 0 auto
+    width: 900px;
+    height: 50px;
+  }
+  footer {
+  	position: fixed;
+    bottom: 0;
+    background-color: #F49595 !important;
+    border: thick B49595;
+    height: 5em;
+    width: 140em;
+  }
+  .footer-left {
+    position: relative;
+    right: -35em;
+    
   }
 </style>
 
@@ -24,10 +47,10 @@
     <div class='google-logo'>
       <h1 class='google-logo-text'>Google</h1>
     </div>
-    <div>
+    <div class='search-btns'>
       <input type='text' class='search' name='Search' placeholder=''>
       <div>
-        <input type='button' name='GoggleSearch' oncClick= value="Google Search" >
+        <input type='button' name='GoggleSearch' value="Google Search" ></a>
         <input type='button' name='FeelLucky' oncClick='https://www.google.com/doodles' value="I'm Feeling Lucky" >
       </div>
     </div>
@@ -42,8 +65,10 @@
     <a href='https://www.google.com/intl/en_kr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1' value='Advertising'>Advertising</a>
     <a href='https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1' value='Business' >Business</a>
     <a href='https://google.com/search/howsearchworks/?fg=1' value='How Search works' >How Search works'</a>
-    <a href='https://policies.google.com/privacy?hl=en-KR&fg=1' value='Privacy' >Privacy</a>
-    <a href='https://policies.google.com/terms?hl=en-KR&fg=1' value='Terms' >Terms</a>
-    <a href='' value='Settnings' >
+    <span class='footer-left'>
+      <a href='https://policies.google.com/privacy?hl=en-KR&fg=1' value='Privacy' >Privacy</a>
+      <a href='https://policies.google.com/terms?hl=en-KR&fg=1' value='Terms' >Terms</a>
+      <a href='' value='Settnings' >
+    </span>
   </footer>
 </main>
