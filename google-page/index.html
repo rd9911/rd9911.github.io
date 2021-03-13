@@ -5,16 +5,17 @@
   	background-color: white;
     justify-content: center;
     align-items: center;
+    font-family: arial,sans-serif;
     }
   .search {
     width: 900px;
     height: 70px;
-    margin: 14em;
+    margin: 11em;
     border-radius: 50px;
     border-width: thin;
     border-color: C4B6B6;
   	}
-  .search:hover {box-shadow: 3px 3px 3px #C4B6B6;}
+  .search:hover {box-shadow: 0px 3px 3px 3px #C4B6B6;}
   .lucky-googsearch {
   	display: flex;
   	justify-content: center;
@@ -31,12 +32,33 @@
     width: 10em;
     height: 3em;
     display: block;
+    padding: 1em;
+    background-color: #f8f9fa;
+    border-radius: 3px
   }
   .GoogleSearch {
   	float: left;
+    margin-right: 2em;
   }
   .FeelLucky {
   	float: right;
+  }
+  .GoogleSearch:hover, .FeelLucky:hover {
+    box-shadow: 0px 1px 1px 1px #C4B6B6;
+  }
+  .SignIn {
+  	background-color: #1a73e8;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    width: 8em;
+    height: 3em;
+    border-radius: 8px;
+  }
+  .SignIn:hover {box-shadow: 0 0 100px 100px rgb(69, 142, 237) inset;}
+  .gmail-images, .signin-options {
+  	position: relative;
+    padding: 10px;
   }
 
   footer {
@@ -52,8 +74,9 @@
     margin-left: 20em;
   }
   .header-nav {
-  	float: right;
-    clear: right;
+  	display: flex;
+    justify-content: right;
+    position: inline-block;
   }
 </style>
 
@@ -62,9 +85,14 @@
   <header>
     <div class='header-nav'>
       <!-- Nav bar with Gmail, Images, Options, Sign in button -->
-      <a href='https://mail.google.com/mail/&ogbl' value='Gmail'/>Gmail</a>
-      <a href='https://www.google.co.kr/imghp?hl=en&ogbl' value='Images'/>Images</a>
-      <input type='button' name='SignIn' onClick='https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ' value='Sign In'>
+      <div class='gmail-images'>
+        <a href='https://mail.google.com/mail/&ogbl' value='Gmail'/>Gmail</a>
+        <a href='https://www.google.co.kr/imghp?hl=en&ogbl' value='Images'/>Images</a>
+      </div>
+      
+      <div class='signin-options'>
+      <input type='button' class='SignIn' onClick='https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ' value='Sign In'>
+      </div>
     </div>
   </header>
   
