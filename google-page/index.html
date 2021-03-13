@@ -6,13 +6,39 @@
     justify-content: center;
     align-items: center;
     }
-   .search-btns {
-
-   }
   .search {
     width: 900px;
-    height: 50px;
+    height: 70px;
+    margin: 14em;
+    border-radius: 50px;
+    border-width: thin;
+    border-color: C4B6B6;
+  	}
+  .search:hover {box-shadow: 3px 3px 3px #C4B6B6;}
+  .lucky-googsearch {
+  	display: flex;
+  	justify-content: center;
+    margin-top: -9em;
   }
+  .language {
+  	display: flex;
+    justify-content: center;
+    padding: 1em;
+  }
+
+  .GoogleSearch, .FeelLucky {
+  	border: thin;
+    width: 10em;
+    height: 3em;
+    display: block;
+  }
+  .GoogleSearch {
+  	float: left;
+  }
+  .FeelLucky {
+  	float: right;
+  }
+
   footer {
   	position: fixed;
     bottom: 0;
@@ -23,15 +49,18 @@
   }
   .footer-left {
     position: relative;
-    right: -35em;
-    
+    margin-left: 20em;
+  }
+  .header-nav {
+  	float: right;
+    clear: right;
   }
 </style>
 
 
 <main>
   <header>
-    <div class='header_nav'>
+    <div class='header-nav'>
       <!-- Nav bar with Gmail, Images, Options, Sign in button -->
       <a href='https://mail.google.com/mail/&ogbl' value='Gmail'/>Gmail</a>
       <a href='https://www.google.co.kr/imghp?hl=en&ogbl' value='Images'/>Images</a>
@@ -45,17 +74,20 @@
       
     </script>
     <div class='google-logo'>
-      <h1 class='google-logo-text'>Google</h1>
+      <h1 class='google-logo-text'><center>Google</center></h1>
     </div>
+    
     <div class='search-btns'>
       <input type='text' class='search' name='Search' placeholder=''>
-      <div>
-        <input type='button' name='GoggleSearch' value="Google Search" ></a>
-        <input type='button' name='FeelLucky' oncClick='https://www.google.com/doodles' value="I'm Feeling Lucky" >
+    
+      <div class='lucky-googsearch'>
+         <input type='button' class='GoogleSearch' value="GoogleSearch" ></a>
+         <input type='button' class='FeelLucky' oncClick='https://www.google.com/doodles' value="I'm Feeling Lucky" >
       </div>
     </div>
-    <div>
-      <p>Google offered in: <a name='language' value='English' href='https://www.google.com/setprefs?sig=0_Hc-zhjV-QA6p7ncIJDtQsUO7P7Y%3D&hl=ko&source=homepage&sa=X&ved=0ahUKEwik39D2p6nvAhVKFogKHQizAuoQ2ZgBCA0'>English</a></p>
+    
+    <div class='language'>
+      <p>Google offered in: <a name='language' value='English' >English</a></p>
     </div>
 
   </body>
