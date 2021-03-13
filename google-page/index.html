@@ -2,7 +2,7 @@
 <style>
   main {
     display: grid;
-  	background-color: white;
+  	background-color: #fff;
     justify-content: center;
     align-items: center;
     font-family: arial,sans-serif;
@@ -60,23 +60,42 @@
   	position: relative;
     padding: 10px;
   }
-
   footer {
   	position: fixed;
     bottom: 0;
-    background-color: #F49595 !important;
-    border: thick B49595;
+    background-color: #f2f2f2;
+    border: thick #B49595;
     height: 5em;
     width: 140em;
+    margin-left:-8px; 
   }
   .footer-left {
     position: relative;
     margin-left: 20em;
   }
+  .footer-links {
+  	padding: 5px;
+    font-size: 20px;
+    }
+  .footer-links:link {color: #222; text-decoration: none;}
   .header-nav {
   	display: flex;
     justify-content: right;
     position: inline-block;
+  }
+  .header-links {
+  	font-size: 20px;
+    padding: 5px;
+    }
+  .header-links:link {color: black; text-decoration: none;}
+  
+  .google-logo {
+  	display: flex;
+    justify-content: center;
+  }
+  .gmail-images {
+  	margin-top: 10px;
+    padding: 15px;
   }
 </style>
 
@@ -86,8 +105,8 @@
     <div class='header-nav'>
       <!-- Nav bar with Gmail, Images, Options, Sign in button -->
       <div class='gmail-images'>
-        <a href='https://mail.google.com/mail/&ogbl' value='Gmail'/>Gmail</a>
-        <a href='https://www.google.co.kr/imghp?hl=en&ogbl' value='Images'/>Images</a>
+        <a href='https://mail.google.com/mail/&ogbl' class='header-links' value='Gmail'/>Gmail</a>
+        <a href='https://www.google.co.kr/imghp?hl=en&ogbl' class='header-links' value='Images'/>Images</a>
       </div>
       
       <div class='signin-options'>
@@ -121,13 +140,13 @@
   </body>
   
   <footer>
-    <a href='https://about.google/?utm_source=google-KR&utm_medium=referral&utm_campaign=hp-footer&fg=1' value='About' >About</a>
-    <a href='https://www.google.com/intl/en_kr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1' value='Advertising'>Advertising</a>
-    <a href='https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1' value='Business' >Business</a>
-    <a href='https://google.com/search/howsearchworks/?fg=1' value='How Search works' >How Search works'</a>
+    <a href='https://about.google/?utm_source=google-KR&utm_medium=referral&utm_campaign=hp-footer&fg=1' class='footer-links' value='About' >About</a>
+    <a href='https://www.google.com/intl/en_kr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1' class='footer-links' value='Advertising'>Advertising</a>
+    <a href='https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1' class='footer-links' value='Business' >Business</a>
+    <a href='https://google.com/search/howsearchworks/?fg=1' class='footer-links' value='How Search works' >How Search works'</a>
     <span class='footer-left'>
-      <a href='https://policies.google.com/privacy?hl=en-KR&fg=1' value='Privacy' >Privacy</a>
-      <a href='https://policies.google.com/terms?hl=en-KR&fg=1' value='Terms' >Terms</a>
+      <a href='https://policies.google.com/privacy?hl=en-KR&fg=1' class='footer-links' value='Privacy' >Privacy</a>
+      <a href='https://policies.google.com/terms?hl=en-KR&fg=1' class='footer-links' value='Terms' >Terms</a>
       <a href='' value='Settnings' >
     </span>
   </footer>
