@@ -49,7 +49,7 @@
   	display: flex;
     justify-content: center;
     margin-top: 200px;
-    margin-left: 150px;
+    margin-left: 70px;
     padding: 5px;
     height: 100px;
     width: 472px;
@@ -57,8 +57,8 @@
   
   .search {
     width: 500px;
-    height: 30px;
-    margin: 11em;
+    height: 50px;
+    margin: 50px;
     border-radius: 50px;
     border: 1px solid #dfe1e5;
   	}
@@ -67,7 +67,8 @@
   .lucky-googsearch {
   	display: flex;
   	justify-content: center;
-    margin-top: -9em;
+    margin-top: -10px;
+    
   }
   .GoogleSearch, .FeelLucky {
   	border: thin;
@@ -101,14 +102,10 @@
     background-color: #f2f2f2;
     border: solid #f2f2f5;
     height: 5em;
-    width: 140em;
+    width: 170em;
     margin-left:-8px; 
   }
-  .footer-right {
-    position: relative;
-    left: 600px;
-    margin-right: 10px;
-  }
+  .footer-right {position: relative; left: 90em;}
   .footer-links {
   	padding: 10px;
     font-size: 20px;
@@ -120,11 +117,13 @@
   }
   
   .search:focus, .header-links:focus, .footer-links:focus {outline: none;}
+  
+  li {display: inline;}
 </style>
 
 
 <main>
-  <header>
+  <nav>
     <div class='header-nav'>
       <!-- Nav bar with Gmail, Images, Options, Sign in button -->
       <div class='gmail-images'>
@@ -136,7 +135,7 @@
       <input type='button' class='SignIn' onClick='https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ' value='Sign In'>
       </div>
     </div>
-  </header>
+  </nav>
 
   
   <body>
@@ -149,7 +148,7 @@
     
     <div class='search-btns'>
       <input type='text' class='search' name='Search' placeholder=''>
-    
+   	  <img src='' class='search-icon'></img>
       <div class='lucky-googsearch'>
          <input type='button' class='GoogleSearch' value="GoogleSearch" ></a>
          <input type='button' class='FeelLucky' oncClick='https://www.google.com/doodles' value="I'm Feeling Lucky" >
@@ -163,14 +162,14 @@
   </body>
   
   <footer>
-    <a href='https://about.google/?utm_source=google-KR&utm_medium=referral&utm_campaign=hp-footer&fg=1' class='footer-links' value='About' >About</a>
-    <a href='https://www.google.com/intl/en_kr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1' class='footer-links' value='Advertising'>Advertising</a>
-    <a href='https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1' class='footer-links' value='Business' >Business</a>
-    <a href='https://google.com/search/howsearchworks/?fg=1' class='footer-links' value='How Search works' >How Search works'</a>
-    <span class='footer-right'>
-      <a href='https://policies.google.com/privacy?hl=en-KR&fg=1' class='footer-links' value='Privacy' >Privacy</a>
-      <a href='https://policies.google.com/terms?hl=en-KR&fg=1' class='footer-links' value='Terms' >Terms</a>
-      <a href='' value='Settnings' >
-    </span>
+    <ul>
+      <li><a href='https://about.google/?utm_source=google-KR&utm_medium=referral&utm_campaign=hp-footer&fg=1' class='footer-links' value='About' >About</a></li>
+      <li><a href='https://www.google.com/intl/en_kr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1' class='footer-links' value='Advertising'>Advertising</a></li>
+      <li><a href='https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1' class='footer-links' value='Business' >Business</a></li>
+      <li><a href='https://google.com/search/howsearchworks/?fg=1' class='footer-links' value='How Search works' >How Search works</a><li>
+      <li class='footer-right' ><a href='https://policies.google.com/privacy?hl=en-KR&fg=1' class='footer-links' value='Privacy' >Privacy</a></li>
+      <li class='footer-right'><a href='https://policies.google.com/terms?hl=en-KR&fg=1' class='footer-links' value='Terms' >Terms</a></li>
+      <li class='footer-right'><a href='' value='Settnings' class='footer-links' >Settings</a></li>
+    </ul>
   </footer>
 </main>
