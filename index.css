@@ -1,4 +1,8 @@
 body {
-  margin: auto;
-  margin-left: 10em;
+  margin-left: 20em;
+  margin-right: 20em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 20px;
+  font-family: 'Fira Code', 'Source COde Pro', 'Arial';
 }
