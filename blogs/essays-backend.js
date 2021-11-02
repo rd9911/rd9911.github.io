@@ -1,6 +1,13 @@
 const http = require('http');
 const mongoose = require('mongoose')
+const express = require('express')
+const essayRouter = express.Router()
 require('dotenv').config()
+const app = express()
+app.use(cors())
+app.use(express.json)
+
+const Essay = require('./models/schema')
 
 main().catch(error => console.log(error))
 
@@ -23,11 +30,20 @@ async function main () {
 
 
 
+essayRouter.post('/', async (req, res) => {
+    const body = req.body
+    const essayToPublish = new Essay({
+        title: body.title,
+        body: body.body,
+        publishedDate: body.date,
+        notes: body.notes,
+        references: body.references
+    })
+    const response = await essayToPublish.save()
+    return res.status(201).json(result)
+})
 
-
-// let title = document.querySelector('.title').textContent
-// let article = document.querySelector('.article').textContent
-// let notes = document.querySelector('.notes').textContent
-
-// let blog = {title: title, article: article, notes: notes}
-// let blogs = []
+essayRouter.post('/', async (res, res) => {
+    const result = await Essay.find({})
+    return res.json(result)
+})
