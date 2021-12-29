@@ -3,17 +3,17 @@ import path from 'path'
 import Head from 'next/head'
 import Post from '../components/Post'
 import matter from 'gray-matter'
+import { sortByDate } from '../utils/helperFunctions'
 
 
 export default function Home({ posts }) {
-  const reducerToSort = (previousVal, currentVal) => previousVal.publishedDate < currentVal.publishedDate ? currentVal : previousVal
   return (
     <div className='container'>
       <Head>
         <title>rd9911</title>
       </Head>
       <div className='posts'>
-        {posts.reduce(reducer).map((post, index) => (
+        {posts.map((post, index) => (
           <Post key={index} post={post} />
          ) )}
       </div>
@@ -34,7 +34,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts
+      posts: posts.sort(sortByDate)
     }
   }
 }
