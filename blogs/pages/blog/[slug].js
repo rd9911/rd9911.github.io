@@ -5,11 +5,11 @@ import Markdown from 'marked-react'
 import Link from 'next/link'
 
 export default function PostPage(
-    { frontmatter: {title, publishedDate, cover_image}, slug, content }) {
+    { frontmatter: {title, publishedDate, cover_image}, content }) {
     return (
         <div>
             <>
-                <Link href='/'>
+                <Link href='/blogs'>
                     <a className='btn btn-back'>Go Back</a>
                 </Link>
                 <div className='card card-page'>
@@ -43,6 +43,6 @@ export async function getStaticProps({ params: {slug} }) {
     const { data: frontmatter, content } = matter(mdWithMeta)
 
     return {
-        props: { frontmatter, slug, content }
+        props: { frontmatter, content, slug}
     }    
 }
