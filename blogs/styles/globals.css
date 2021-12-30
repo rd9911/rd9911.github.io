@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  margin-bottom: auto;
   padding: 0;
 }
 
@@ -193,4 +194,9 @@ ol {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
+}
+
+.main-image {
+  top: 40%;
+  left: 30%;
 }
