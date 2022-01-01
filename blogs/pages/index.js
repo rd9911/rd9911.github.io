@@ -9,8 +9,13 @@ export default function Home() {
         <Head>
           <title>rd9911</title>
         </Head>
-        <div className='main-image'>
-          <Image src={homer_image} alt='welcoming image' />
+        <div className='intro'>
+          <div className='intro-image'>
+            <Image src={homer_image} alt='welcoming image' />
+          </div>
+          <div className='intro-text'>
+            <h1>I am Avaz, a full-stack developer in Helsinki, Finland who is specialized React.js and Node.js.</h1>
+          </div>
         </div>
       </div>
   )

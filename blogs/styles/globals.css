@@ -129,6 +129,7 @@ ol {
 
 .nav-bar a {
   padding: 5px;
+  text-decoration: underline solid black !important;
   color: #000000;
   text-decoration: none;
   font-size: 1.2em;
@@ -142,12 +143,14 @@ ol {
 
 .nav-bar a:hover {
   color: #ff0404;
+  text-decoration: underline solid #ff0404 !important;
+
 }
 
 .nav-bar .dot {
   width: 6px;
   height: 6px;
-  background: #fddb3a;
+  background: #ff0404;
   border-radius: 50%;
   opacity: 0;
   -webkit-transform: translateX(30px);
@@ -181,22 +184,46 @@ ol {
 }
 
 .nav-bar a:nth-child(4):hover ~ .dot {
-  -webkit-transform: translateX(295px);
-  transform: translateX(295px);
+  -webkit-transform: translateX(287px);
+  transform: translateX(287px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 
 .nav-bar a:nth-child(5):hover ~ .dot {
-  -webkit-transform: translateX(397px);
-  transform: translateX(397px);
+  -webkit-transform: translateX(385px);
+  transform: translateX(385px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 
-.main-image {
-  top: 40%;
-  left: 30%;
+.nav-bar a:nth-child(6):hover ~ .dot {
+  -webkit-transform: translateX(490px);
+  transform: translateX(490px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.intro-image {
+  position: relative;
+  grid-column: 1;
+  padding: 10px;
+}
+
+.intro-text {
+  position: relative;
+  grid-column: 2;
+  padding: 10px;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  margin-top: 2em;
+  margin-right: 40px;
+  margin-left: 40px;
 }

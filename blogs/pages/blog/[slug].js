@@ -7,7 +7,7 @@ import Link from 'next/link'
 export default function PostPage(
     { frontmatter: {title, publishedDate, cover_image}, content }) {
     return (
-        <div>
+        <div className='container'>
             <>
                 <Link href='/blogs'>
                     <a className='btn btn-back'>Go Back</a>
