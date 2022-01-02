@@ -227,3 +227,15 @@ ol {
   margin-right: 40px;
   margin-left: 40px;
 }
+
+.social-links {
+  align-content: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.link {
+  padding: 5px;
+}
