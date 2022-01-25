@@ -6,7 +6,7 @@ import Markdown from 'marked-react'
 
 export default function Bio({ frontmatter: {title, cover_image}, content }) {
     return (
-        <div>
+        <div className='container'>
             <>
                 <Link href='/'>
                     <a className='btn btn-back'>Go Back</a>

@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+$brown: #A87328;
+$blue: #8533ff;
+$umber: #54290C;
+$springer: #EDED80;
 
 * {
   box-sizing: border-box;
   margin: 0;
   margin-bottom: auto;
   padding: 0;
+}
+
+html, body {
+  min-height: 100%;
 }
 
 body {
@@ -27,7 +35,7 @@ img {
 }
 
 header {
-  background: steelblue;
+  background: black;
   color: #fff;
   padding: 5px;
   margin-bottom: 40px;
@@ -48,6 +56,7 @@ header a {
   display: inline-block;
   background: steelblue;
   color: #fff;
+  margin: 5px;
   border: none;
   padding: 8px 16px;
   border-radius: 5px;
@@ -184,28 +193,28 @@ ol {
 }
 
 .nav-bar a:nth-child(4):hover ~ .dot {
-  -webkit-transform: translateX(287px);
-  transform: translateX(287px);
+  -webkit-transform: translateX(300px);
+  transform: translateX(300px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 
 .nav-bar a:nth-child(5):hover ~ .dot {
-  -webkit-transform: translateX(385px);
-  transform: translateX(385px);
+  -webkit-transform: translateX(410px);
+  transform: translateX(410px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 
-.nav-bar a:nth-child(6):hover ~ .dot {
-  -webkit-transform: translateX(490px);
-  transform: translateX(490px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
+// .nav-bar a:nth-child(6):hover ~ .dot {
+//   -webkit-transform: translateX(490px);
+//   transform: translateX(490px);
+//   -webkit-transition: all 0.2s ease-in-out;
+//   transition: all 0.2s ease-in-out;
+//   opacity: 1;
+// }
 
 .intro-image {
   position: relative;
@@ -228,6 +237,10 @@ ol {
   margin-left: 40px;
 }
 
+.contact-info {
+  margin-top: 2em;
+}
+
 .social-links {
   align-content: center;
   padding: 10px;
@@ -237,5 +250,82 @@ ol {
 }
 
 .link {
+  padding: 10px;
+}
+
+.bookshelf {
+  width: 80%;
+  height: 100%;
+  margin: 2em auto;
+  border: 10px #A87328 solid;
+  overflow: hidden;
+  background-image: linear-gradient(darken(#A87328, 32%), darken(#A87328, 30%) 220px, lighten(#A87328, 4%) 220px, 
+    lighten(#A87328, 4%) 222px, #A87328 222px, #A87328 228px, darken(#A87328, 4%) 228px, darken(#A87328, 4%) 230px);
+  background-size: 10px 230px;
+  box-shadow: 0px 1000px 0px 400px #7A7668;
+}
+
+.book {
+  height: 200px;
+  width: 40px;
+  float: left;
+  color: white;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  transition: transform 0.4s ease;
+}
+
+.book:hover {
+  transform: scale(1.05) !important;
+}
+
+.book h2 {
   padding: 5px;
+  font-size: 1em;
+  transform-origin: 0% 0%;
+  transform: rotate(0.25turn) translateY(-35px);
+  width: 170px;
+}
+
+.book h3 {
+  padding: 0;
+  font-size: 0.6em;
+  transform-origin: 0 0;
+  transform: rotate(0.25turn) translateY(-15px) translateX(-20px);
+  width: 150px;
+}
+
+.book-tilted {
+  float: left;
+  width: 74px;
+}
+
+.book-tilted > .book {
+  transform: translateY(-3px) translateX(15px) rotate(9deg);
+}
+
+.book-green {
+  background-color: darkgreen;
+  border-left: 2px solid lighten(darkgreen, 4%);
+  border-right: 2px solid darken(darkgreen, 4%);
+}
+
+.book-blue {
+  background-color: $blue;
+  border-left: 2px solid lighten($blue, 4%);
+  border-right: 2px solid darken($blue, 4%);
+}
+
+.book-umber {
+  background-color: $umber;
+  border-left: 2px solid lighten($umber, 4%);
+  border-right: 2px solid darken($umber, 4%);
+}
+
+.book-springer {
+  background-color: $springer;
+  border-left: 2px solid lighten($springer, 4%);
+  border-right: 2px solid darken($springer, 4%);
+  color: black;
 }
