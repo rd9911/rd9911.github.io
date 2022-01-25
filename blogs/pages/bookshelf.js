@@ -6,11 +6,13 @@ import Book from '../components/Book';
 
 export default function Bookshelf({ books }) {
   return (
-        <div className='bookshelf'>
+    <div className='container'>
+      <div className='bookshelf'>
           {books.map((book, index) => (
             <Book key={index} book={book} />
            ) )}
         </div>
+    </div>
   );
 }
 
