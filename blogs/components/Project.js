@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 
 function Project({project}) {
-  console.log(project)
   return (
     <div className='card'>
         <img src={project.frontmatter.cover_image} alt='/' />
