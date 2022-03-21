@@ -8,4 +8,7 @@ publishDate: '2014'
 cover_image: '../images/book_images/a_mid_for_numbers.jpg'
 ---
 
-## Title
+### TLDR
+### The core idea
+### I would recommend this book to ...
+<!-- ###  Applications -->

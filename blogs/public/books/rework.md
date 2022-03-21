@@ -8,4 +8,7 @@ publishDate: '2010'
 cover_image: '../images/book_images/rework.jpg'
 ---
 
-## Title
+### TLDR
+### The core idea
+### I would recommend this book to ...
+<!-- ###  Applications -->

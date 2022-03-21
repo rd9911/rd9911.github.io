@@ -8,4 +8,7 @@ publishDate: '2005'
 cover_image: '../images/book_images/elements_of_computing.jpg'
 ---
 
-## Title
+### TLDR
+### The core idea
+### I would recommend this book to ...
+<!-- ###  Applications -->

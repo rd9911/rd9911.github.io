@@ -113,9 +113,12 @@ header a {
   padding: 3px 10px;
 }
 
+.post-body {
+  font-size: 80%;
+}
+
 .post-body ul,
 ol {
-  font-size: 110%;
   margin: 1em;
   line-height: 2.3;
   font-weight: bold;

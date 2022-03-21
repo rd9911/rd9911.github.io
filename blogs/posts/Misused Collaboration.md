@@ -5,14 +5,12 @@ tldr: 'Shortly.'
 cover_image: '/images/postedImages/82f45ed2713db138b40d218b43a3f203.jpg'
 ---
 
-## Misused Collaboration
-
 Starting from the late 20th century we have been taught the importance of collaboration in organization. As Steve Jobs famously said: “Creativity is connecting the dots”. There is no doubt that the idea of people coming together has tremendous amounts of benefits for an organization in ways that it contributes to the democracy inside of the company, improvement of ideas by challenging them, and overall, as a rule of thumb, two minds far better than one. Surprisingly, every good idea that is being implemented in a mainstream culture starts to be misused and/or misinterpreted. Religions contributed the equality and morality of human beings towards the nature and other species until religious leaders started to put benefits of themselves above anything else, democracy contributed the equality between government and nation until populists started to use it in their own gains, communism, at first, aimed to get the basic rights of working class people stronger in order to prevent violations of laws by employers until leaders started to misuse it and ignore the issues with it again for their own benefits, and of course, capitalism that made our economy efficient by bringing price signals and profit maximization throughout times became a cult that pursues profits and efficiency over nature and harmony.
 
 Because we will use the word “collaboration” more than few times, it is wise to ask the question: what is collaboration? Collaboration is the situation of two or more people working together to create or achieve the same thing. The two main purposes of collaboration[1]:
 
-    Increase efficiency.
-    Increase productivity.
+Increase efficiency.
+Increase productivity.
 
 So what happened with the idea of collaboration? Since, I consider meetings as a part of the collaboration, the first problem is quantity of meetings. Because quantity diminishes quality these number of meetings may not necessarily contribute towards to productivity and efficiency. If the collaboration is not making an organization more efficient and productive, in my opinion, it violates its main principles and eliminates the main benefits.
 
@@ -36,8 +34,8 @@ That is far more simple to explain. Have you ever been in a meeting where a lead
 
 To elaborate on further solutions regarding this problem managers before starting the meetings can put the list what kind of tasks will be done during every part of an agenda. Then do the tasks that can be done before the meeting. Characteristics of these kind of tasks are:
 
-    When doing the tasks everyone except one person is taking no action in the process.
-    When it can give participants of the meeting more time and space to think about it.
+When doing the tasks everyone except one person is taking no action in the process.
+When it can give participants of the meeting more time and space to think about it.
 
 In addition to that, managers can put time constraints in order to be efficient. For example, managers can put the rule that the meeting should not exceed 30 minutes and always follow it.
 

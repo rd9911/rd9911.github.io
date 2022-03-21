@@ -8,4 +8,7 @@ publishDate: '2016'
 cover_image: '../images/book_images/deep_work.jpg'
 ---
 
-## Title
+### TLDR
+### The core idea
+### I would recommend this book to ...
+<!-- ###  Applications -->

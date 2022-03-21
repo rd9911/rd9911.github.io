@@ -7,4 +7,7 @@ publishDate: '2017'
 tilted: 'untilted'
 ---
 
-## Title
+### TLDR
+### The core idea
+### I would recommend this book to ...
+<!-- ###  Applications -->
