@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import homer_image from '../public/main_content/homer.jpg'
 import github_image from '../public/main_content/github.png'
 import twitter_image from '../public/main_content/twitter.png'
 import linkedin_image from '../public/main_content/linkedin.png'
@@ -12,11 +11,8 @@ export default function Home() {
   return (
       <div className='container'>
           <div className='intro'>
-            <div className='intro-image'>
-              <Image src={homer_image} alt='welcoming image' />
-            </div>
             <div className='intro-text'>
-              <h1>I am Avaz, a full-stack developer, and financial analyst based onm Helsinki. Primary technologies that I work with are React.js, Node.js, Numpy, and Pandas. <br/> You can contact me through:</h1>
+              <h1>I am Avaz, a full-stack developer, and financial analyst based on Helsinki. Primary technologies that I work with are React.js, Node.js, Numpy, and Pandas. <br/> You can contact me through:</h1>
               <div>
                 <div className='social-links'>
                   <a className='link' type='button' href='https://github.com/rd9911' target='_blank' rel='noreferrer' ><Image src={github_image} alt='github-logo' width={58} height={30} /></a>
